@@ -2,16 +2,16 @@
 	"name": "phpbbseo/related",
 	"type": "phpbb-extension",
 	"description": "Related Topics for phpBB-SEO",
-    "homepage": "http://www.phpbb-seo.org",
+    "homepage": "http://www.phpbb-seo.ir",
 	"keywords": ["phpbbSEO", "extension", "seo", "USU", "related", "topics", "similar"],
-	"version": "2.0.0-b1",
-	"time": "2019-03-12",
+	"version": "2.0.0-b2",
+	"time": "2020-04-12",
 	"license": "GPL-2.0",
     "authors": [
         {
  			"name": "Meis@M",
-			"email": "info@phpbb-seo.org",
-			"homepage": "http://www.phpbb-seo.org/",
+			"email": "info@phpbb-seo.ir",
+			"homepage": "http://www.phpbb-seo.ir/",
 			"role": "Lead Developer"
         },
         {
@@ -20,7 +20,7 @@
         }
     ],
 	"require": {
-		"php": ">=5.4.2"
+		"php": ">=7.1.0"
 	},
 	"extra": {
 		"display-name": "Related Topics for phpBB-SEO",
@@ -28,9 +28,10 @@
 		    "phpbb/phpbb": "3.2.*@dev"
 		},
 		"version-check": {
-			"host": "version.phpbb-seo.org",
-			"directory": "/",
-            "filename": "related.json"
+			"host": "phpbb-seo.github.io",
+			"directory": "/versions",
+			"filename": "relate.json",
+			"ssl": true
 		}
 	}
 }

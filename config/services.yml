@@ -10,15 +10,15 @@ services:
     phpbbseo.related.listener:
         class: phpbbseo\related\event\listener
         arguments:
-            - @config
-            - @auth
-            - @template
-            - @user
-            - @cache
-            - @dbal.conn
+            - '@config'
+            - '@auth'
+            - '@template'
+            - '@user'
+            - '@cache'
+            - '@dbal.conn'
             - %core.root_path%
             - %core.php_ext%
-            - @?phpbbseo.usu.core
+            - '@?phpbbseo.usu.core'
         tags:
             - { name: event.listener }
 
