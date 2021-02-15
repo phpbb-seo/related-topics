@@ -3,7 +3,7 @@
 *
 * @package No Duplicate phpBB SEO
 * @version $Id$
-* @copyright (c) 2019 www.phpbb-seo.org
+* @copyright (c) 2014 www.phpbb-seo.com
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */
@@ -83,7 +83,7 @@ class listener implements EventSubscriberInterface
 	* @param string					$php_ext			PHP file extension
 	* @param \phpbbseo\usu\core			$usu_core			usu core object
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\auth\auth $auth, \phpbb\template\template $template, \phpbb\user $user, \phpbb\cache\service $cache, \phpbb\db\driver\driver_interface $db, $phpbb_root_path, $php_ext, \phpbbseo\usu\core $usu_core = null)
+	public function __construct(\phpbb\config\config $config, \phpbb\auth\auth $auth, \phpbb\template\template $template, \phpbb\user $user, \phpbb\cache\service $cache, \phpbb\db\driver\driver_interface $db, $phpbb_root_path, $php_ext, \phpbbseo\usu\core\core $usu_core = null)
 	{
 		global $phpbb_container; // god save the hax
 
